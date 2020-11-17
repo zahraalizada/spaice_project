@@ -121,37 +121,34 @@
     }
     
     .cover-content {
-        padding-top: 200px;
-    }
-    
-    .cover-content span,
-    .cover-content small,
-    .cover-content a {
-        display: block;
+        padding-top: 150px;
         text-align: center;
-        margin-bottom: 10px;
     }
     
-    .cover-content span {
+    .cover-content h1 {
         font-size: 48px;
         font-weight: 600;
         text-transform: lowercase;
+        text-align: center;
     }
     
-    .cover-content small {
+    .cover-content p {
         font-size: 18px;
         font-weight: 600;
         text-transform: lowercase;
+        text-align: center;
     }
     
     .cover-content a {
+        display: inline-block;
+        text-align: center;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 1px;
-        max-width: 60px;
+        min-width: 50px;
         height: 30px;
         border-radius: 40px;
-        padding-top: 10px;
+        padding: 10px 10px 0;
         margin: auto;
     }
     /* menu */
@@ -200,8 +197,16 @@
         margin-bottom: 50px;
     }
     
-    #Gallery img {
+    .gallery-img {
+        height: 280px;
+        overflow: hidden;
+    }
+    
+    .gallery-img img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+        object-position: center;
     }
     
     #Gallery p {
@@ -213,7 +218,6 @@
     #Gallery p {
         margin: 0 50px 20px 50px;
     }
-    /*  margin: 10px 50px 10px 50px;*/
     /*Gallery section end */
     /*Ethem section start */
     
@@ -262,6 +266,18 @@
         line-height: 1.7;
         margin-bottom: 20px;
     }
+    
+    .fast-img {
+        height: 335px;
+        overflow: hidden;
+    }
+    
+    .fast-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
     /*Fast section end */
     /* Services section start */
     
@@ -295,12 +311,12 @@
         background: url(../img/videoimg.png) no-repeat;
         height: 300px;
         padding-top: 120px;
-        max-width: 900px;
+        text-align: center;
+        overflow: hidden;
     }
     
     .video img {
-        display: block;
-        margin: auto;
+        display: inline-block;
     }
     /* Video section end */
     /* Studio section start */
@@ -350,12 +366,15 @@
     }
     
     .sec-menu-img {
-        max-width: 300px;
+        display: inline-block;
+        height: 255px;
         text-align: center;
+        overflow: hidden;
     }
     
     .sec-menu-img img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: center;
     }
@@ -375,11 +394,15 @@
     /* Small section start */
     
     .small-img {
-        /* max-width: 200px; */
+        height: 530px;
+        overflow: hidden;
     }
     
     .small-img img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+        object-position: center;
     }
     
     #Small span {
@@ -416,11 +439,21 @@
     /* Latest section end */
     /* Article-area section start */
     
-    #Article-area {}
-    
     #Article-area table td {
         padding-bottom: 100px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .art-img {
+        height: 210px;
+        overflow: hidden;
+    }
+    
+    .art-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
     
     .art-date {
@@ -461,8 +494,16 @@
     }
     
     .blog-img {
-        max-width: 300px;
+        height: 330px;
+        overflow: hidden;
         padding-bottom: 50px;
+    }
+    
+    .blog-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
     
     .blog-date {
@@ -506,11 +547,11 @@
     
     #Download p {
         font-size: 18px;
-        margin-bottom: 10px;
     }
     
-    #Download span {
-        font-size: 30px;
+    #Download h5 {
+        font-size: 28px;
+        margin: 20px 20px 20px 0px;
     }
     /* Download-area section ends */
     
